@@ -1,0 +1,65 @@
+﻿@model WebApplicationPlayground.Models.Weather
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Enter the Weather Information</h1>
+<div class="row">
+    <div class="col-md-6">
+         <form method="post" action="/weather/create">
+            <div class="form-group">
+                <label for="place">Place: </label>
+                <input type="text" class="form-control" name="place" id="place" placeholder="Wien">
+            </div>
+            <div class="form-group">
+                <label for="temperature">Temperature: </label>
+                <input type="text" class="form-control" name="temperature" id="temperature" placeholder="25">
+            </div>
+            <p class="h4">Country: </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="country" id="austria" value="AT" checked>
+                <label class="form-check-label" for="austria">
+                    Austria
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="country" id="germany" value="DE">
+                <label class="form-check-label" for="germany">
+                    Germany
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="country" id="czech" value="CH">
+                <label class="form-check-label" for="czech">
+                    Czech Republic
+                </label>
+            </div>
+            <br />
+            <p class="h4">Forcast: </p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="rain" id="rain" value=true>
+                <label class="form-check-label" for="rain">
+                   Rain
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="storm" id="storm" value=true>
+                <label class="form-check-label" for="storm">
+                    Storm
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="tornado" id="tornado" value=true>
+                <label class="form-check-label" for="tornado">
+                    Tornado
+                </label>
+            </div>
+            <br />
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+         </form>
+    </div>
+</div>

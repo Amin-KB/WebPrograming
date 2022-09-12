@@ -1,0 +1,1 @@
+[{"Id":1,"Place":"Wien","Temperature":30,"Country":"AT","Rain":false,"Storm":true,"Tornado":false},{"Id":2,"Place":"Franfkfurt","Temperature":28,"Country":"DE","Rain":false,"Storm":false,"Tornado":true},{"Id":3,"Place":"Berlin","Temperature":24,"Country":"DE","Rain":false,"Storm":false,"Tornado":false}]
